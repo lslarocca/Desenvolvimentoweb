@@ -47,6 +47,105 @@ Seletor de ID */
 
  /************
  Seletor de irmao geral*/
- h1~p {
+ /*h1~p {
  	color: blue;
- }
+ }*/
+
+
+ /**********************
+  Heranca e especificidade*/
+/** {
+    border: 1px solid blue;
+}*/
+
+/*body {
+    color: red;
+/*******
+ Por padrao border e background nao sao herdados */
+
+    /*border: 1px solid blue;
+    background: gray;
+}*/
+
+/* No caso de uso de seletores iguais, o ultimo sera aplicado, excexao important
+#pagina p {
+    color: red !important;
+}
+
+#pagina p {
+    color; blue;
+}*/
+
+/* Se um seletor for mais especifico que outro a regra mais especifica sera aplicada (tera precedencia sobre regras mais gerais)
+*/
+/** {
+    color: red;
+}
+
+h2 { (3)
+    color: blue;
+}
+
+h2.verde {(2)
+    color: green;
+}
+
+h2#amarelo {(1) 
+    color: yellow;
+}
+*/
+
+/***************************
+ Barra de navegacao vertical */
+/* 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    padding: 5px 20px;
+    background: url(../imagens/seta.png) no-repeat left center ;
+}
+*/
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+/*Utilizar sempre um background-color para o caso de haver algum problema com o carregamento da imagem*/
+ul a {
+    /*border: 1px solid red;*/
+    width: 200px;
+    height: 40px;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    text-indent: 40px;
+    line-height: 40px;
+    background: #f7b600 url(../imagens/menu.png) no-repeat left bottom;
+}
+
+a:hover {
+    background-position: right bottom;
+    background-color: #f99200;
+    color: #fff;
+}
+
+/*a:hover, .selecionado a {
+    background-position: right bottom;
+    background-color: #f99200;
+    color: #fff;
+}*/
+
+#home .home a,
+#sobre .sobre a,
+#servicos .servicos a,
+#noticias .noticias a,
+#contato .contato a {
+    background-position: right bottom;
+    background-color: #f99200;
+    color: #fff;
+}
