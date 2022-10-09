@@ -7,62 +7,177 @@
 
 body {
 	font-family: IBMPlexSans,sans-serif;
-	color: #1a1a1b;
 	background-color: #fff;
-	font-size: 1em;
+	font-weight: 500;
+    line-height: 18px;
+    color: #1a1a1b;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+	color: #0079d3;
+}
+
+a:hover {
+	color: #3394dc;
 }
 
 
-/* Formatacao container
+/* Formatacao conteudos
 */
 #container {
-	width: 750px;
-	margin: 0;
-	border: 1px solid red;
+	max-width: 750px;
 }
-
 
 #conteudo {
-	border: 1px solid blue;
-	width: 593px;
+
+}
+
+#bg {
+	width: 20%;
+	background: url(../imagens/bg-home.png) no-repeat top left;
 	float: left;
-	margin-left: 157px;
-	margin-top: 10px;
-	z-index: 1;
+	height: 100vh;
+    background-size: cover;
 }
 
-#conteudo .topo {
-	margin-top: 30px;
-	margin-left: 10px;
-	margin-bottom: 48px;
+#conteudo-principal {
+	width: 80%;
+	height: 100vh;
+	float: right;
 }
 
-#conteudo .topo h1 {
+#conteudo-formulario {
+	margin-top: 80px;
+	padding-left: 24px;
+}
+
+#conteudo-formulario h1 {
 	font-size: 18px;
 	font-weight: 500;
 	line-height: 22px;
 }
 
-#conteudo .topo p {
-	font-family: Noto Sans,sans-serif;
+#conteudo-formulario .paragrafo-topo {
+	font-family: Noto Sans,sans-serif;	
     font-size: 12px;
     font-weight: 400;
     line-height: 18px;
     margin-top: 8px;
 }
 
-#bg {
-	/*border: 1px solid green;*/
-	width: 156px;
-	background: url(../imagens/bg-home.png) no-repeat top left;
-	float: left;
-	margin: 0 0 0 -750px;
-	height: 100vh;
-    min-height: 430px;
-    background-size: cover;
-    z-index: -1;
+#caixas-botoes {
+	max-width: 280px;
+	margin: 48px 0 18px;	
 }
 
-#conteudo .formulario {
-	margin-left: 10px;
+#caixas-botoes a {
+	display: block;
+	position: relative;
+	text-align: left;
+	padding: 16px 0 16px 65px;
+	margin: 8px 0;
+	border: 1px solid #0079d3;
+	border-radius: 3px;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+}
+
+#caixas-botoes a:hover {
+	background: #0079d3;
+	color: #fff;
+}
+
+#caixas-botoes p {
+	margin: 28px 0;
+	font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #878a8c;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#caixas-botoes img {
+	position: absolute;
+	padding: 14px;
+	left: 2px;
+	top: 2px;
+	border-radius: 3px;
+	background: #fff;
+}
+
+#formulario {
+	width: 280px;    
+}
+
+#formulario #caixa-texto {
+	max-width: 256px;
+}
+
+#formulario input {
+	display: block;
+	position: relative;
+	width: 100%;	
+	font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 21px;
+	border: 1px solid rgba(0,0,0,.1);
+	border-radius: 4px;
+    background-color: #fcfcfb;
+}
+
+#formulario #caixa-texto input {
+	margin-top: 12px;
+	padding: 22px 12px 10px;
+	font-size: 10px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    line-height: 12px;
+    color: #a5a4a4;
+	background-image: url(chrome-extension://igkpcodhieompeloncfnbekccinhapdb/images/vault-input-disabled.svg);
+	background-repeat: no-repeat;
+	background-position: 99% center;
+	background-size: 14px
+}
+
+#formulario input.submit {
+	width: 100%;
+	margin-top: 12px;
+	color: #fff;
+	background: #0079d3;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: .5px;
+   	text-align: center;    
+}
+
+#formulario input.submit:hover {
+	cursor: pointer;
+	background: #3394dc;
+}
+
+#texto-rodape .paragrafo-1 {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+#texto-rodape .paragrafo-2 {
+	font-family: Noto Sans,sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+#texto-rodape .paragrafo-2 span {
+	text-transform: uppercase;
+	font-weight: 600;
 }

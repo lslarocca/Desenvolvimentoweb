@@ -3,9 +3,20 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>reddit.com:Entrar</title>
+		<title>reddit.com: Entrar</title>
+
+		<!-- icone pagina -->
+		 <link rel = "icon" href ="https://www.redditstatic.com/accountmanager/favicon/favicon-32x32.png" type ="image/x-icon">
+
 		<!--estilo personalizado -->
 		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+		<!-- declaracao de fontes -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap" rel="stylesheet">
+
 
 	</head>
 
@@ -14,48 +25,70 @@
 		<div id="container"><!-- inicio container -->
 
 			<div id="conteudo"><!-- inicio conteudo -->
-				<div class="topo">
-					<h1>Entrar</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur <span><a href="#">adipiscing</a></span> elit. Mauris at sodales eros, <span><a href="#">ac lacinia</a></span> nibh.</p>
-				</div>
 
-				<form class="formulario">
-					<div id="caixas-botoes"><!-- inicio caixa botoes -->
-						<div id="google">
-							continuar com google
-						</div>
-						<div id="apple">
-							continuar com apple
-						</div>
-						<div id="outro">
-							ou							
-						</div>						
-					</div><!--/fim caixa botoes -->
-					
-					<div>
-						<input type="text" name="email" id="email" placeholder="E-mail">
-					</div>
-
-					<div>
-						<input type="password" name="senha" id="senha" placeholder="Senha">
-					</div>
-
-					<div>
-						<input type="submit" value="Entrar">
-					</div>
-
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					
-				</form>
-			</div><!--/fim conteudo -->
-
-			<div id="bg">
+				<div id="bg"><!-- inicio bg -->
 				
-			</div>
-			<div style="clear: both;"></div>
+				</div><!--/fim bg -->
+
+				<div id="conteudo-principal"><!-- inicio conteudo-principal -->
+
+					<div id="conteudo-formulario"><!-- inicio conteudo-formulario -->
+
+						<h1>Entrar</h1>
+						<p class="paragrafo-topo">Ao continuar, você concorda com nosso <span><a href="#">Contrato de Usuário</a></span> e nossa<span> <a href="#">Política de Privacidade.</a></span></p>						
+
+						<form id="formulario"><!-- inicio formulario -->
+
+							<div id="caixas-botoes"><!-- inicio caixa botoes -->
+								
+									<a id="google" href="#">
+										<img src="https://www.redditstatic.com/accountmanager/021031274726bcaef27a190f609eb59f.svg">
+										continuar com google
+									</a>
+
+									<a id="apple" href="#">
+										<img src="https://www.redditstatic.com/accountmanager/56133cfff407f8c1fb8694b4ef00975c.svg">
+										continuar com apple
+									</a>
+								
+								<p>ou</p>															
+
+							</div><!--/fim caixa botoes -->
+							
+								<div id="caixa-texto"><!-- inicio caixa-texto -->
+									<div>
+									<input type="text" name="email" id="email" placeholder="nome de usuário">
+								</div>
+
+								<div>
+									<input type="password" name="senha" id="senha" placeholder="Senha">
+								</div>
+
+							</div><!--/fim caixa-texto -->
+
+							<div >
+								<input class="submit" type="submit" value="Entrar">
+							</div>
+
+							<div id="texto-rodape"><!-- inicio texto-rodape -->
+
+								<p class="paragrafo-1">Esqueceu o<span> <a href="#">nome de usuário</a> </span> ou a <span><a href="#">senha</a></span> ?</p>
+								<p class="paragrafo-2">Primeira vez no Reddit?<span> <a href="#">cadastre-se</a></span></p>
+								
+							</div><!--/fim texto-rodape -->
+							
+						</form><!--/fim formulario -->
+
+					</div><!--/fim conteudo-formularo -->
+
+				</div><!--/fim conteudo-principal -->
+
+				<div style="clear: both;"></div><!-- div para ajustar float -->
+
+			</div><!--/fim conteudo -->			
 			
 		</div><!--/fim container -->
 
 	</body>
+
 </html>
