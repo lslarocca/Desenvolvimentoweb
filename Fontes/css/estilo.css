@@ -1,0 +1,11 @@
+/*Formatacoes de fonte*/
+@font-face {
+	font-family: "Road Rage";
+	src: url(../fonts/RoadRage.woff);
+}
+
+body {
+	font-family: "Road Rage";
+	font-size: 3em;
+	text-align: center;
+}
