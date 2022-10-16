@@ -1,0 +1,29 @@
+header {
+	border: 1px solid #ccc;
+	background: #f2f2f2;
+	padding: 10px;
+}
+
+nav {
+	border: 1px solid green;
+	background: #f3f3f3;
+	padding: 10px;
+}
+
+footer {
+	background: #ccc;
+}
+
+article {
+	padding: 10px;
+	background: orange;
+}
+
+section {
+	border: 1px dotted #fff;
+}
+
+aside {
+	background: blue;
+}
+
