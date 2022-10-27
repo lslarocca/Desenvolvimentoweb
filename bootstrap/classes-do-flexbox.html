@@ -19,6 +19,7 @@
       .item {
         border:1px solid black;
         padding: 5px;
+        background:#17ffb6; 
       }
 
       p {
@@ -67,36 +68,36 @@
       <!-- -------------------------------------------------------------------------------- -->
 
       <h2>Alinhamento horizontal: justify-content-ALINHAMENTO (start, center, end, around e between)</h2>
-      <p>justify-content-</p>
-      <div class="caixa">
+      <p>justify-content-start</p>
+      <div class="caixa d-flex justify-content-start">
         <div class="item">Flex item 1</div>
         <div class="item">Flex item 2</div>
         <div class="item">Flex item 3</div>
       </div>
       <br><br>
-      <p>justify-content-</p>
-      <div class="caixa">
+      <p>justify-content-center</p>
+      <div class="caixa d-flex justify-content-center">
         <div class="item">Flex item 1</div>
         <div class="item">Flex item 2</div>
         <div class="item">Flex item 3</div>
       </div>
       <br><br>
-      <p>justify-content-</p>
-      <div class="caixa">
+      <p>justify-content-end</p>
+      <div class="caixa d-flex justify-content-end">
         <div class="item">Flex item 1</div>
         <div class="item">Flex item 2</div>
         <div class="item">Flex item 3</div>
       </div>
       <br><br>
-      <p>justify-content-</p>
-      <div class="caixa">
+      <p>justify-content-around</p>
+      <div class="caixa d-flex justify-content-around">
         <div class="item">Flex item 1</div>
         <div class="item">Flex item 2</div>
         <div class="item">Flex item 3</div>
       </div>
       <br><br>
-      <p>justify-content-</p>
-      <div class="caixa">
+      <p>justify-content-between</p>
+      <div class="caixa d-flex justify-content-between">
         <div class="item">Flex item 1</div>
         <div class="item">Flex item 2</div>
         <div class="item">Flex item 3</div>
@@ -105,7 +106,15 @@
       <!-- ------------------------------------------------------------------------------- -->
 
       <h2>Colunas (d-flex, flex-column, flex-column-reverse)</h2>
-      <div class="caixa">
+      <p>flex-column</p>
+      <div class="caixa d-flex flex-column">
+        <div class="item">Flex item 1</div>
+        <div class="item">Flex item 2</div>
+        <div class="item">Flex item 3</div>
+      </div>
+      <br><br>
+      <p>flex-column-reverse</p>
+      <div class="caixa d-flex flex-column-reverse">
         <div class="item">Flex item 1</div>
         <div class="item">Flex item 2</div>
         <div class="item">Flex item 3</div>
@@ -114,21 +123,50 @@
       <!-- ------------------------------------------------------------------------------- -->
 
       <h2>Alinhamento vertical: align-items-ALINHAMENTO (start, center, end, baseline e stretch)</h2>
-      <div class="caixa">
-        <div class="item">Flex item 1</div>
+      <p>align-items-start</p>
+      <div class="caixa d-flex align-items-start">
+        <div class="item" style="padding-top: 30px;">Flex item 1</div>
         <div class="item">Flex item 2</div>
-        <div class="item">Flex item 3</div>
+        <div class="item" style="padding-bottom:50px;">Flex item 3</div>
+      </div>
+      <br><br>
+      <p>align-items-center</p>
+      <div class="caixa d-flex align-items-center">
+        <div class="item" style="padding-top: 30px;">Flex item 1</div>
+        <div class="item">Flex item 2</div>
+        <div class="item" style="padding-bottom:50px;">Flex item 3</div>
+      </div>
+      <br><br>
+      <p>align-items-end</p>
+      <div class="caixa d-flex align-items-end">
+        <div class="item" style="padding-top: 30px;">Flex item 1</div>
+        <div class="item">Flex item 2</div>
+        <div class="item" style="padding-bottom:50px;">Flex item 3</div>
+      </div>
+      <br><br>
+      <p>align-items-baseline</p>
+      <div class="caixa d-flex align-items-baseline">
+        <div class="item" style="padding-top: 30px;">Flex item 1</div>
+        <div class="item">Flex item 2</div>
+        <div class="item" style="padding-bottom:50px;">Flex item 3</div>
+      </div>
+      <br><br>
+      <p>align-items-stretch</p>
+      <div class="caixa d-flex align-items-stretch">
+        <div class="item" style="padding-top: 30px;">Flex item 1</div>
+        <div class="item">Flex item 2</div>
+        <div class="item" style="padding-bottom:50px;">Flex item 3</div>
       </div>
       <br><br>
       <!-- --------------------------------------------------------------------------------------- -->
 
       <h2>Alinhamento self: align-self-ALINHAMENTO (start, center, end, baseline e stretch)</h2>
-      <div class="caixa">
-        <div class="item">Flex item 1</div>
-        <div class="item">Flex item 2</div>
-        <div class="item">Flex item 3</div>
-        <div class="item">Flex item 4</div>
-        <div class="item">Flex item 5</div>
+      <div class="caixa d-flex">
+        <div class="item align-self-start">Flex item 1</div>
+        <div class="item align-self-center">Flex item 2</div>
+        <div class="item align-self-end">Flex item 3</div>
+        <div class="item align-self-baseline">Flex item 4</div>
+        <div class="item align-self-stretch">Flex item 5</div>
       </div>
       <br><br>
       <!-- --------------------------------------------------------------------------------- -->
