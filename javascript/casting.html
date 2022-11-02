@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>JavaScript</title>
+		<script>
+			// Processo de casting trnasformando string em valores numéricos
+			// As variáveis recebem os valores atribuidos no prompt pelo usuário e retornam como strings
+			// Com os comandos parseInt e parseFloat você faz com que ele interpretem as strings e transformem em valores numéricos
+
+			var variavel1 = prompt('Digite qualquer número:')		 
+			var variavel2 = prompt('Digite outro número:')
+
+			variavel1 = parseFloat(variavel1)
+			variavel2 = parseInt(variavel2)
+
+			// console.log(variavel1)
+			// console.log(variavel2)
+
+			document.write('Valor resultante do processo de casting de strings para números: '+ variavel1 + variavel2 +'<br><br><br>')
+
+
+			// Processo de casting onde os valores numéricos são transformados em strings
+
+
+			var variavel3 = 30		 
+			var variavel4 = 50
+
+			document.write('Valor resultante do processo de casting de números para strings: ' + variavel3.toString() + variavel4.toString())
+
+
+			// document.write( variavel1 + variavel2)
+ 		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>
