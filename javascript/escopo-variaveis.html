@@ -11,15 +11,16 @@
 			//Imagine uma caixa onde você vai criando outras caixas menores dentro dela
 			//As caixas menores tem acesso as informaçoes das caixas maiores onde elas estão contidas, porém o inverso não ocorre
 
-			//Escopo Global
+			//****Escopo Global****
 
 			var serie - 'Fiends'
 
-			//escopo de bloco
+			//****Escopo de bloco****(if); (switch) & (while).
+
 			if (true) {
 				//Escopo da função
 				var serie2 = 'Game of Thrones'
-				//A variável dentro do bloco sofre uma elevação e fica disponível no escopo Global assim a função também consegue acesso a ela 
+				//A variável dentro do bloco sofre uma elevação e fica disponível no escopo Global assim a função x também consegue acesso a ela 
 				document.write(serie)
 			}
 
@@ -27,15 +28,16 @@
 
 			document.write('<br>')
 
-			//escopo de função
+			//****Escopo de Função****
+
 			function x() {
+				// ****A variável (serie3) diferente das outras não fica disponível para o escopo global e nem o escopo de bloco!!*****
+				//Isto ocorre porque o escopo da função faz com que todas as variáveis declaradas fiquem apenas disponíveis no seu próprio escopo  
 
 				var seie3 = 'The Walking Dead'
 				document.write(serie)
 				document.write(serie2)
 			}
-
-
 
 			x()
 
