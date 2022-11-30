@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>JavaScript Array básico</title>
+		<script>
+			//existem algumas formas de se escrever um Array
+			var lista_frutas = Array ()
+
+			lista_frutas[1] = 'Banana'
+			lista_frutas[2] = true
+			lista_frutas['x'] = 'Morango'
+			lista_frutas[4] = 100
+
+			//nesta forma você não precisa escrever o Array ele interpreta automaticamente
+			var lista_frutas = []
+
+			lista_frutas[1] = 'Banana'
+			lista_frutas[2] = true
+			lista_frutas['x'] = 'Morango'
+			lista_frutas[4] = 100
+			
+			//Nesta forma você não precisa declarar a lista com os valores o proprio JS atribui os valores começando do 0
+
+			var lista_frutas = Array ('Banana', 'Maçã', 'Morango', 'Uva')
+
+
+			//Nesta forma você não precisa declarar nem o Array nem a lista, o próprio JS interpreta tudo e atribui os valores começando do 0
+			var lista_frutas = ['Banana', 'Maçã', 'Morango', 'Uva']
+
+			//--! Cuidado ao utilizar o atributo length para verificar os valores das variáveis!--//
+			//--!Ele funciona mais como um mostrador do próximo valor e também não funciona com strings, ele desconsidera e informa um valor errado!--//
+		</script>	
+
+	</head>
+
+	<body>
+		
+	</body>
+</html>
