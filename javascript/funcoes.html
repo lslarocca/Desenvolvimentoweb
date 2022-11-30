@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>JavaScript</title>
+		<script>
+			// Existem dois tipos de funções em JavaScript 
+			// void -> Não entrega nenhum retorno de parâmetro para quem está criando a função 
+
+			// retorno -> retorna parâmetros para quem está criando a função, e estes parâmetros posteriormente podem ser utilizados dentro da lógica do script
+
+			
+
+				/*var largura = prompt('Digite a largura do terreno em metros')
+				var comprimento = prompt('Digite o comprimento do terreno em metros')
+
+				var area = calcularAreaTerreno(largura, comprimento)
+
+				document.write('O terreno possui ' + area + ' metros quadrados')
+
+
+
+			function calcularAreaTerreno ( largura, comprimento ) {
+
+				// lógica
+				var area = largura * comprimento
+				return area
+
+							}
+							*/
+
+			function soma (a, b) {
+				//b = b === undefined ? 0 : b
+				return a + b
+			}				
+
+			console.log(soma(7,7)) //atribui os respectivos valores as variáveis
+
+			console.log(soma(7,7,9,15)) //desconsidera os parâmetros adicionais
+
+			console.log(soma(7)) //deixa b como undefined e retorna NaN not a number
+
+			console.log(soma(7,7)) // deixa a e b como undefined e retorna NaN not a number			
+
+		</script>
+			
+	</head>
+	<body>
+		
+	</body>
+</html>

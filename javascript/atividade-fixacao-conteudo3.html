@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>JavaScript</title>
+		<script>
+			// Declaração das variáveis
+
+			var num1 = prompt('Por favor digite um número inteiro aleatório:')
+			var num2 = prompt('Por favor digite outro número inteiro aleatório:')
+			var operacao = prompt('Por favor digite qual operação você deseja realizar entre os números que foram escolhidos: (+)Soma ou (-)Subtração')
+
+			// Criando a lógica da função
+			
+			function calculo(num1, num2, operacao){
+
+				// Convertendo strings para números
+
+				num1 = parseFloat(num1)
+				num2 = parseFloat(num2)
+
+				var resultado = 0
+
+				if (operacao == 'soma') {
+					resultado = num1 + num2
+				}
+
+				if (operacao == 'subtração') {
+					resultado = num1 - num2
+				}
+
+				return resultado
+			}
+			document.write('O resultado é: ' + calculo(num1, num2, operacao))
+			
+
+
+
+
+			/*var num1 = prompt('Digite um número');
+			var operacao = prompt('Digite a operação');
+			var num2 = prompt('Digite outro número');
+
+			function calc(num1, num2, operacao){
+
+			 num1 = parseFloat(num1);
+			 num2 = parseFloat(num2);
+
+			 var resultado = 0;
+
+			 if(operacao == 'soma'){
+			 resultado = num1 + num2;
+			 }
+
+			 if(operacao == 'subtracao'){
+			 resultado = num1 - num2;
+			 }
+
+			 return resultado;
+			}
+
+			document.write('O resultado é: ' + calc(num1, num2, operacao));
+			*/ 
+
+		</script>
+			
+	</head>
+	<body>
+		
+	</body>
+</html>

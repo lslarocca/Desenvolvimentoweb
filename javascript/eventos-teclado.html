@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>JavaScript</title>
+		<script>
+
+			function acao1() {
+				alert('Evento Disparado! Você apertou uma tecla válida!')
+			}
+
+			function acao2() {
+				alert('Evento Disparado! Você apertou e soltou uma tecla válida!')
+			}
+
+			function acao3() {
+				alert('Evento Disparado! Você apertou e soltou uma tecla válida!')
+			}
+			
+		</script>
+			
+	</head>
+
+	<body>
+		<p>Será acionado quado você apertar qualquer tecla!</p>
+		<input style="width: 350px; height: 30px;" onkeydown="acao1()" type="text" placeholder="ONKEYDOWN"><br><br>
+		<p>Será acionado após você apertar e soltar qualquer tecla!</p>
+		<input style="width: 350px; height: 30px;" onkeyup="acao2()" type="text" placeholder="ONKEYUP"><br><br>
+		<p>Será acionado quado você apertar qualquer tecla válida! Só funciona para teclas que representam caracteres</p>
+		<input style="width: 350px; height: 30px;" onkeypress="acao3()" type="text" placeholder="ONKEYPRESS"><br><br>		
+	</body>
+</html>

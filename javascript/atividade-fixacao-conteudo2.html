@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>JavaScript</title>
+		<script>
+
+			// Declaração de variárveis
+
+			var nome = prompt('Insira o seu nome: ')
+			var altura = prompt('Informe a sua altura(cm): ')
+			var peso = prompt('Informe qual é o seu peso(kg): ')
+
+			// Conversão de strings para números
+
+			altura = parseFloat(altura)
+			peso = parseFloat(peso)
+
+			altura2 = (altura / 100)
+
+			// Cálculo de massa corporal
+
+			var imc = (peso / (altura2 * altura2))
+
+			console.log(nome)
+			console.log(peso)
+			console.log(altura2)
+			console.log(imc)
+
+			// Estrutura condicional
+
+			if (imc <= 16) {
+				document.write('Olá ' + nome + ' você atualmente possui um índice de massa corporal de ' + imc + ' isto é considerado baixo peso muito grave.')
+
+			} else if(imc >= 16&&imc <= 16.99) {
+				document.write('Olá ' + nome + ' você atualmente possui um índice de massa corporal de ' + imc + ' isto é considerado baixo peso grave.')
+
+			} else if(imc >= 17&&imc <= 18.49) {
+				document.write('Olá ' + nome + ' você atualmente possui um índice de massa corporal de ' + imc + ' isto é considerado baixo peso.')
+
+			} else if(imc >= 18.50&&imc <= 24.99) {
+				document.write('Olá ' + nome + ' você atualmente possui um índice de massa corporal de ' + imc + ' isto é considerado peso normal.')
+
+			} else if(imc >= 25&&imc <= 29.99) {
+				document.write('Olá ' + nome + ' você atualmente possui um índice de massa corporal de ' + imc + ' isto é considerado sobrepeso.')
+
+			} else if(imc >= 30&&imc <= 34.99) {
+				document.write('Olá ' + nome + ' você atualmente possui um índice de massa corporal de ' + imc + ' isto é considerado obesidade grau I.')
+
+			} else if(imc >= 35&&imc <= 39.99) {
+				document.write('Olá ' + nome + ' você atualmente possui um índice de massa corporal de ' + imc + ' isto é considerado obesidade grau II.')
+
+			} else if(imc >= 40) {
+				document.write('Olá ' + nome + ' você atualmente possui um índice de massa corporal de ' + imc + ' isto é considerado obesidade grau III.')
+			}
+			
+
+
+
+
+
+
+
+			
+
+		</script>
+			
+	</head>
+	<body>
+		
+	</body>
+</html>
