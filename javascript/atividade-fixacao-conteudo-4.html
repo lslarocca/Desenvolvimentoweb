@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Atividade fixacao conteudo</title>
+		
+		<script>
+			function acionaCampo() {
+
+				//Ira mudar o background do elemento no momento em que ele for acionado pelo evento onfocus
+				document.getElementById('senha').style.background = "yellow"
+			}
+
+			function validaCampo() {
+				// Ira validar o campo com as condicoes descritas no documento alterando o background para verde e vermelho
+				var valorCampo = document.getElementById('senha').value
+
+				if (valorCampo.length < 3) {
+
+					document.getElementById('senha').style.background = "red"
+				} else {
+
+					document.getElementById('senha').style.background = "green"
+				}
+			}
+			
+		</script>	
+
+	</head>
+
+	<body>
+
+		<h3>Atividade 4</h3>
+
+		<input id="senha" type="text" onfocus="acionaCampo()" onblur="validaCampo()">
+
+		
+	</body>
+</html>
