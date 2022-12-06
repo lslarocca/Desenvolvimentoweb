@@ -4,13 +4,39 @@
 		<title></title>
 		<script>
 
-			//3 escopos: global, funcao e bloco
+			//agora as variaveis de escopo nao sofrerao elevacao e cada uma das variaveis ira apresentar seus respectivos valores
 
-			if(true) {
+			let serie = 'Friends'
+
+			{
+				let serie = 'The Walking Dead'
+				console.log('dentro do bloco ' + serie)
+			}
+
+			console.log('fora do bloco ' + serie)
+
+
+			//a variavel sera sobreposta e as duas variaveis apresentarao o mesmo valor
+			/*var serie = 'Friends'
+
+			{
+				var serie = 'The Walking Dead'
+				console.log('dentro do bloco ' + serie)
+			}
+
+			console.log('fora do bloco ' + serie)*/
+
+
+
+
+			//3 escopos: global, funcao e bloco
+			//com let a variavel nao sofre elevacao
+
+			/*if(true) {
 				let serie = 'Friends'
 			}
 
-			console.log(serie)
+			console.log(serie)*/
 			
 		</script>
 	</head>
