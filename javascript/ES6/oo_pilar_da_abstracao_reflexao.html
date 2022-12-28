@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<script>
+			//um software de marcenaria
+			//cadeira e sofa
+
+			// paradigma procedural
+
+			//cadeira - caracteristicas
+			/*let qtde_de_pernas = 4
+			let giratoria = false
+			let cor = 'azul'
+
+			//array de cadeiras
+			let cadeiras = Array()
+
+			cadeiras[0] = Arrat()
+			cadeiras[0]['qtde_de_pernas'] = 4
+			cadeiras[0]['giratoria'] = false
+			cadeiras[0]['cor'] = 'azul'
+
+			cadeiras[1] = Arrat()
+			cadeiras[1]['qtde_de_pernas'] = 1
+			cadeiras[1]['giratoria'] = true
+			cadeiras[1]['cor'] = 'vermelha'
+
+
+
+
+
+			
+			//cadeira - acoes
+
+			function girar_cadeira(indice) {
+				if(cadeiras[indice] 'giratoria' === true) {
+					console.log('girou')
+				} else {
+					console.log('cadeira nao e giratoria')
+				}
+			}
+
+			girar_cadeira()
+
+			function adicionar_cadeira(qtde_de_pernas, giratoria, cor) {
+				let cadeira['qtde_de_pernas'] = qtde_de_pernas
+				let cadeira['giratoria'] = giratoria	
+				let cadeira['cor'] = cor
+
+				cadeiras.push(cadeira)
+			} 
+
+
+			adicionar_cadeira(3,false, 'verde')
+			console.log(cadeiras)*/
+
+
+			//paradigma de OO
+			//modelo do objeto
+			class Cadeira {
+				constructor(qtde_de_pernas, giratoria, cor) {
+					this.qtde_de_pernas = qtde_de_pernas
+					this.giratoria = giratoria
+					this.cor = cor
+				}
+
+				girarCadeira() {
+					if(this.giratoria === true) {
+						console.log('girou')
+					} else {
+						console.log('cadeira nao e giratoria')
+					}
+				}
+			}
+
+			
+			let cadeiras = Array()
+
+			cadeiras.push(new Cadeira(4, false, 'azul'))
+			cadeiras.push(new Cadeira(1, true, 'vermelha'))
+
+			console.log(cadeiras)
+			//cadeira2.girarCadeira()
+
+			class Sofa {
+				constructor(qtde_de_lugares, reclinavel, cor) {
+					this.qtde_de_lugares = qtde_de_lugares
+					this.reclinavel = reclinavel
+					this.cor = cor
+				}
+
+				sofaReclinavel() {
+					if(this.reclinavel === true) {
+						console.log('deitou')
+					} else {
+						console.log('sofa nao e reclinavel')
+					}
+				}
+			}
+
+			
+			let sofas = Array()
+
+			sofas.push(new Sofa(2, false, 'azul'))
+			sofas.push(new Sofa(3, true, 'vermelho'))
+
+			console.log(sofas)
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>
